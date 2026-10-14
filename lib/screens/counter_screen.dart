@@ -48,8 +48,8 @@ class CounterScreen extends ConsumerWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                AppTheme.emeraldGreen.withOpacity(0.9),
-                AppTheme.goldenBrown.withOpacity(0.8),
+                AppTheme.emeraldGreen.withValues(alpha: 0.9),
+                AppTheme.goldenBrown.withValues(alpha: 0.8),
                 AppTheme.backgroundDark,
               ],
             ),
@@ -66,9 +66,9 @@ class CounterScreen extends ConsumerWidget {
                         child: Container(
                           padding: const EdgeInsets.all(24),
                           decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.1),
+                            color: Colors.white.withValues(alpha: 0.1),
                             borderRadius: BorderRadius.circular(24),
-                            border: Border.all(color: AppTheme.goldenBrown.withOpacity(0.5), width: 2),
+                            border: Border.all(color: AppTheme.goldenBrown.withValues(alpha: 0.5), width: 2),
                           ),
                           child: Text(
                             currentDhikr.text,
@@ -102,7 +102,7 @@ class CounterScreen extends ConsumerWidget {
                               ? currentDhikr.currentCount / currentDhikr.targetCount
                               : 0,
                           strokeWidth: 8,
-                          backgroundColor: Colors.white.withOpacity(0.2),
+                          backgroundColor: Colors.white.withValues(alpha: 0.2),
                           valueColor: const AlwaysStoppedAnimation<Color>(AppTheme.goldenBrown),
                         ),
                       ),

@@ -31,7 +31,7 @@ class ListScreen extends ConsumerWidget {
               elevation: 2,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
-                side: BorderSide(color: AppTheme.emeraldGreen.withOpacity(0.2), width: 1),
+                side: BorderSide(color: AppTheme.emeraldGreen.withValues(alpha: 0.2), width: 1),
               ),
               child: InkWell(
                 onTap: () {
@@ -54,7 +54,7 @@ class ListScreen extends ConsumerWidget {
                         ),
                       ),
                       const SizedBox(height: 16),
-                      Divider(color: AppTheme.goldenBrown.withOpacity(0.5)),
+                      Divider(color: AppTheme.goldenBrown.withValues(alpha: 0.5)),
                       const SizedBox(height: 8),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,

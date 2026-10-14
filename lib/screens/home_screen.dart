@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
         title: const Text('أوراد اليوم والليلة', style: TextStyle(fontFamily: 'Amiri', fontSize: 24, fontWeight: FontWeight.bold)),
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: AppTheme.backgroundLight,
         ),
         child: Padding(
@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
                 elevation: 4,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
-                  side: BorderSide(color: AppTheme.goldenBrown.withOpacity(0.3), width: 1),
+                  side: BorderSide(color: AppTheme.goldenBrown.withValues(alpha: 0.3), width: 1),
                 ),
                 child: InkWell(
                   onTap: () {
@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
-                      gradient: LinearGradient(
+                      gradient: const LinearGradient(
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                         colors: [
