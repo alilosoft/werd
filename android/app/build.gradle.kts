@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.adhkar_app"
+    namespace = "dev.alilosoft.werd"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
